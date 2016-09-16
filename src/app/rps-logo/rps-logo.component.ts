@@ -11,7 +11,7 @@ export class RPSLogoComponent {
   option : RockPaperScissors;
 
   getImageUrl(){
-    let root = '/assets/images/';
+    let root = 'assets/images/';
     if(this.option === null)
       return root + 'question.png';
     return `${root}${RockPaperScissors[this.option].toLowerCase()}.png`;
